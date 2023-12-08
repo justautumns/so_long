@@ -99,13 +99,13 @@ void	check_map(t_game *game)
 		line++;
 	}
 	if (game->score == 0)
-		ft_exit("Error\nThere's no sushi", game);
+		ft_exit("Error\nThere's no dolar", game);
 	else if (game->exit == 0)
-		ft_exit("Error\nThere's no box", game);
+		ft_exit("Error\nThere's no door", game);
 	else if (game->exit > 1)
-		ft_exit("Error\nJust one box per map", game);
+		ft_exit("Error\nJust door per map", game);
 	else if (game->player == 0)
-		ft_exit("Error\nThere's no Mya", game);
+		ft_exit("Error\nThere's no bahar", game);
 	else if (game->player > 1)
-		ft_exit("Error\nJust one Mya per map", game);
+		ft_exit("Error\nJust one bahar per map", game);
 }
